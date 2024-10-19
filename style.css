@@ -1,0 +1,218 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  img {
+    height: 150px;
+    width: 150px;
+  }
+  
+  #food_logo {
+    height: 100px;
+    width: 100px;
+    float: right;
+    margin-left: 100px;
+  }
+  
+  #keranjang {
+    height: 80px;
+    width: 80px;
+  }
+  
+  #Menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-size: 60px;
+    background-color: grey;
+    margin-top: 10px;
+  }
+  
+  #Food {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: -150px;
+  }
+  
+  #Food li {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: grey;
+    height: 350px;
+    width: 200px;
+    margin-bottom: 100px;
+  }
+  
+  #Food li img {
+    padding-left: 45px;
+  }
+  
+  #Food li h2 {
+    font-size: 40px;
+    padding-left: 60px;
+  }
+  
+  #Opening {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    margin-left: 75px;
+  }
+  
+  #Harga {
+    text-align: center;
+  }
+  
+  .Menu_img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  h2 {
+    margin-left: -30px;
+  }
+  
+  .Photo-Person {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .Small_Div {
+    background-color: yellow;
+    height: 200px;
+    width: 11000 px;
+  }
+  
+  .Big_Div {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -200px;
+  }
+  
+  .Names {
+    margin-left: 35px;
+  }
+  
+  .Small_Div2 {
+    background-color: lightblue;
+    height: 250px;
+    width: 50 px;
+  }
+  
+  
+  .Menu_Website {
+    width: 1000px;
+    position: relative;
+    top: -100px;
+  }
+  
+  .Top_Menu {
+    width: 1000px;
+  }
+  
+  #Opening {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .Menu_Makanan {
+    position: relative;
+    top: -1000px;
+  }
+  
+  .Restaurant_Menu {
+    position: relative;
+    top: -180px;
+  }
+  
+  .Login_Page{
+    width: 300px;
+    height:350px;
+    margin-left: 500px;
+    margin-top: 100px;
+    background-color: orange;
+    position: relative;
+    color:black;
+    text-align: center;
+  }
+  .Login_Page p{
+    text-align: center;
+    color:gray;
+    font-size: 50px;
+  }
+  .Login_Page a{
+    color:gray;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .Login_Page h5{
+    text-align:center;
+  }
+  .Menu_Website a{
+    color:black;
+    text-decoration: none;
+  }
+  .Login_Page input{
+    margin-bottom: 20px;
+  }
+  .Login_Page button{
+    background-color: red;
+  }
+  .Checkout{
+    background-color: lightblue;
+    margin-left: 400px;
+  }
+  .Product_Food{
+    padding-right: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    display: flex;
+    list-style-type: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: darkblue;
+  }
+  .subtotal{
+    padding-left: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: darkblue;
+  }
+  .quantity{
+    padding-bottom: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: darkblue;
+  }
+  .quantity input{
+    width: 50px;
+  }
+  #total_semua{
+    display: flex;
+  }
+  #total_s{
+    width: 200px;
+    font-size: 25px;
+  }
+  #empty{
+    width: 60px;
+  }
+  #t_sm{
+    width: 65px;
+  }
+  .remove_button{
+    color: red;
+    cursor: pointer;
+  }
+  #chart_count{
+    font-size: 30px;
+  }

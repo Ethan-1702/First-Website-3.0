@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Restaurant</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="Opening">
+    <div class="Top_Menu">
+      <h1>
+        Welcome to my website. My first restaurant website. My first website
+      </h1>
+      <img src="food_logo.png" alt="Food Logo" id="food_logo">
+    </div>
+    <div class="Menu_Website">
+      <ol id="Menu">
+        <li>
+          Home
+        </li>
+        <li>
+          Product
+        </li>
+        <li>
+          Contact
+        </li>
+        <li>
+          <a href="Login_Page.html">Login</a>
+        </li>
+        <li>
+          <a href="Checkout_Page.html">
+            <img src="keranjang.png" alt="keranjang" id="keranjang">
+          </a>
+        </li>
+        <li>
+          <p id="chart_count">0</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div id="Menu_Makanan">
+    <h1 class="Restaurant_Menu" style="color: blue; text-align: center;">Restaurant Aku Menu</h1>
+    <ol id="Food">
+      <li>
+        <h2 style="color: green; text-align: left;">Mi</h2>
+        <img src="PhotoMie.jpeg" alt="Mie" class="Menu_img">
+        <p id="Harga">
+          Harga=Rp.20,000
+        </p>
+        <button id="Mie_Button" onclick="addToCart('Mie',20000,'PhotoMie.jpeg')">
+          Buy
+        </button>
+      </li>
+      <li>
+        <h2 style="color: yellow; text-align: left;">Nasi</h2>
+        <img src="PhotoNasi.jpeg" alt="Nasi" class="Menu_img">
+        <p id="Harga">
+          Harga=Rp.5,000
+        </p>
+        <button id="Nasi_Button" onclick="addToCart('Nasi',5000,'PhotoNasi.jpeg')">
+          Buy
+        </button>
+      </li>
+      <li>
+        <h2 style="color: red; text-align: left;">Seafood</h2>
+        <img src="seafood.jpeg" alt="Seafood" class="Menu_img">
+        <p id="Harga">
+          Harga=Rp.30,000
+        </p>
+        <button id="Seafood_Button" onclick="addToCart('Seafood',30000,'seafood.jpeg')">
+          Buy
+        </button>
+      </li>
+      <li>
+        <h2 style="color: purple; text-align: left;">Kuah</h2>
+        <img src="PhotoKuah.webp" alt="Kuah" class="Menu_img">
+        <p id="Harga">
+          Harga=Rp.5,000
+        </p>
+        <button id="Kuah_Button" onclick="addToCart('Kuah',5000,'PhotoKuah.webp')">
+          Buy
+        </button>
+      </li>
+      <li>
+        <h2 style="color: orange;" class="Foods">Sayuran</h2>
+        <img src="PhotoSayuran.jpeg" alt="Sayuran" class="Menu_img">
+        <p id="Harga">
+          Harga=Rp.10,000
+        </p>
+        <button id="Sayuran_Button" onclick="addToCart('Sayuran',10000,'PhotoSayuran.jpeg')">
+          Buy
+        </button>
+      </li>
+      <li>
+        <h2 style="color: pink; text-align: left;">Fried Rice</h2>
+        <img src="fried rice.jpeg" alt="Fried Rice" class="Menu_img">
+        <p id="Harga">
+          Harga=Rp.20,000
+        </p>
+        <button id="FriedRice_Button" onclick="addToCart('Fried Rice',20000,'fried rice.jpeg')">
+          Buy
+        </button>
+      </li>
+      <li>
+        <h2 style="color: black; text-align: left;">Soto Betawi</h2>
+        <img src="soto betawi.jpeg" alt="Soto Betawi" class="Menu_img">
+        <p id="Harga">
+          Harga=Rp.25,000
+        </p>
+        <button id="SotoBetawi_Button" onclick="addToCart('Soto Betawi',25000,'soto betawi.jpeg')">
+          Buy
+        </button>
+      </li>
+      <li>
+        <h2 style="color: lime; text-align: left;">Rendang</h2>
+        <img src="rendang.jpeg" alt="Rendang" class="Menu_img">
+        <p id="Harga">
+          Harga=Rp.10,000
+        </p>
+        <button id="Rendang_Button" onclick="addToCart('Rendang',10000,'rendang.jpeg')">
+          Buy
+        </button>
+      </li>
+      <li>
+        <h2 style="color: brown; text-align: left;">Omelette</h2>
+        <img src="omelette.jpg" alt="Omelette" class="Menu_img">
+        <p id="Harga">
+          Harga=Rp.5,000
+        </p>
+        <button id="Omelette_Button" onclick="addToCart('Omelette',5000,'omelette.jpg')">
+          Buy
+        </button>
+      </li>
+      <li>
+        <h2 style="color: blueviolet; text-align: left;">Perkedel</h2>
+        <img src="perkedel.jpeg" alt="Perkedel" class="Menu_img">
+        <p id="Harga">
+          Harga=Rp.5,000
+        </p>
+        <button id="Perkedel_Button" onclick="addToCart('Perkedel',5000,'perkedel.jpeg')">
+          Buy
+        </button>
+      </li>
+      <li>
+        <h2 style="color: indianred; text-align: left;">Tahu</h2>
+        <img src="tahu.jpeg" alt="Tahu" class="Menu_img">
+        <p id="Harga">
+          Harga=Rp.5,000
+        </p>
+        <button id="Tahu_Button" onclick="addToCart('Tahu',5000,'tahu.jpeg')">
+          Buy
+        </button>
+      </li>
+      <li>
+        <h2 style="color: yellowgreen; text-align: left;">Tempe</h2>
+        <img src="tempe.jpeg" alt="Tempe" class="Menu_img">
+        <p id="Harga">
+          Harga=Rp.5,000
+        </p>
+        <button id="Tempe_Button" onclick="addToCart('Tempe',5000,'tempe.jpeg')">
+          Buy
+        </button>
+      </li>
+    </ol>
+  </div>
+  <div class="Big_Div">
+    <div class="Small_Div">
+      <p>
+        The food is good
+      </p>
+      <div>
+
+      </div>
+      <img src="Photo_Person.jpeg" class="Photo-Person">
+      <h4 class="Names">
+        Jerry
+      </h4>
+    </div>
+    <div class="Small_Div">
+      <p>
+        The food is cheap
+      </p>
+      <div>
+
+      </div>
+      <img src="Photo_Person2.jpeg" class="Photo-Person">
+      <h4 class="Names">
+        Marry
+      </h4>
+    </div>
+    <div class="Small_Div">
+      <p>
+        The tempe is nice
+      </p>
+      <div>
+
+      </div>
+      <img src="Photo_Person3.jpeg" class="Photo-Person">
+      <h4 class="Names">
+        Bob
+      </h4>
+    </div>
+  </div>
+  <div>
+    <ol id= "Food">
+      <li>
+        <img src="food_logo.png">
+        <h5>Our Logo</h5>
+      </li>
+      <li>
+        <p>
+          Useful Links
+        </p>
+        <h5>
+          Coupons
+        </h5>
+        <h5>
+          Promos
+        </h5>
+        <h5>
+          Privacy and Policy
+        </h5>
+      </li>
+      <li>
+        <p>
+          Follow Us
+        </p>
+        <h5>
+          Facebook
+        </h5>
+        <h5>
+          Twitter
+        </h5>
+        <h5>
+          Instagram
+        </h5>
+        <h5>
+          Youtube
+        </h5>
+      </li>
+      <li>
+        <p>
+          Download our app
+        </p>
+        <h5>
+          Download our app for Aindroid and ios mobile phone
+        </h5>
+        <img src="get-it-on.png" ></div>
+      </li>
+    </ol>
+    <script src="script.js"></script>
+</body>
+</html>
